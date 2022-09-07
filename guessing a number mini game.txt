@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class hellow {
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+
+     int mynumber=(int)(Math.random()*100);
+     int usernum=0;
+     do{
+         System.out.println("Enter the guess number");
+         usernum=sc.nextInt();
+         if(usernum==mynumber)
+         {
+             System.out.println("waooo:) correct number");
+             break;
+         }else if(usernum>mynumber)
+         {
+             System.out.println("your number is large:try again");
+         }else
+         {
+             System.out.println("your number is small:try again");
+
+         }
+     } while(usernum>=0);
+
+    }
+}
